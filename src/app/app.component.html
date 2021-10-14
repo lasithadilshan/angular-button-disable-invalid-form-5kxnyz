@@ -1,0 +1,14 @@
+<h3>Submit button disable example Reactive Form</h3>
+<form [formGroup]="reactiveForm">
+		  <input placeholder="Enter your Age" formControlName="age"/>
+  <button type="submit" [disabled]="reactiveForm.invalid">Submit</button>
+</form>
+<br>
+<div>reactiveForm.valid= {{ reactiveForm.valid }}</div>
+<div>reactiveForm.invalid = {{ reactiveForm.invalid }}</div>
+<div>reactiveForm.status = {{ reactiveForm.status }}</div>
+<div>reactiveForm.disabled = {{ reactiveForm.disabled }}</div>
+
+
+<!--
+<app-button-disable-template>-->
